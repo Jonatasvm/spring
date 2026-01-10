@@ -18,16 +18,19 @@ public class Game {
     private Integer year;
     private String genre;
     private String plataform;
+    private Double score;
     private String imgUrl;
     private String shortDescription;
     private String longDescription;
 
-    public Game(long id, String title, Integer year, String genre, String plataform, String imgUrl, String shortDescription, String longDescription) {
+    public Game(long id, String title, Integer year, String genre, String plataform,Double score, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
         this.year = year;
         this.genre = genre;
         this.plataform = plataform;
+        this.score = score;
+
         this.imgUrl = imgUrl;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
@@ -48,6 +51,7 @@ public class Game {
     public String getPlataform() {
         return plataform;
     }
+    public Double getScore() {return score;}
     public String getImgUrl() {
         return imgUrl;
     }
@@ -78,6 +82,8 @@ public class Game {
     public void setPlataform(String plataform) {
         this.plataform = plataform;
     }
+
+    public void setScore(Double score) {this.score = score;}
 
     public void setImgUrl(String imgUrl) {
         this.imgUrl = imgUrl;
